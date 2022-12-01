@@ -1,0 +1,527 @@
+*,
+*::after,
+*::before {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: none;
+  box-sizing: border-box; }
+
+body {
+  margin: 0px; }
+
+a,
+a:visited,
+a:link {
+  text-decoration: none; }
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  padding: 0px;
+  margin: 0px; }
+
+input {
+  padding: 0px;
+  margin: 0px; }
+
+a, img {
+  border: none; }
+
+body {
+  background-color: #2B2B2B; }
+
+.container {
+  width: 1280px;
+  padding: 0px 115px 0px 115px;
+  margin: 0 auto; }
+
+img {
+  display: block; }
+
+@media screen and (min-width: 834px) and (max-width: 1279px) {
+  .container {
+    width: 834px;
+    padding: 0px 72px 0px 72px; } }
+@media screen and (min-width: 375px) and (max-width: 834px) {
+  .container {
+    width: 375px;
+    padding: 0px 30px; } }
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  padding: 0px 50px 0px 50px; }
+
+.header__nav {
+  display: flex;
+  column-gap: 10px;
+  height: 60px;
+  align-items: center; }
+
+.nav__text {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff; }
+.nav__item {
+  padding: 12px 20px 12px 20px;
+  transition: 0.35s; }
+  .nav__item:hover {
+    transform: scale(0.95); }
+.nav__item_active {
+  display: flex;
+  column-gap: 12px;
+  padding: 0px 30px 0px 30px;
+  background-color: #a259ff;
+  border-radius: 20px;
+  align-items: center;
+  height: 60px; }
+  .nav__item_active img {
+    width: 20px;
+    height: 20px; }
+.nav__burger-menu {
+  display: none; }
+
+@media screen and (min-width: 834px) and (max-width: 1279px) {
+  .header__row {
+    height: 54px; }
+
+  .logo_link-img {
+    width: 182px;
+    height: 24px; }
+
+  .nav__marketplace,
+  .nav__rankings,
+  .nav__wallet,
+  .nav__sign-up {
+    display: none; }
+
+  .nav__burger-menu {
+    display: block; } }
+@media screen and (min-width: 375px) and (max-width: 834px) {
+  .header__row {
+    padding: 0px 30px;
+    height: 54px; }
+
+  .logo_link-img {
+    width: 182px;
+    height: 24px; }
+
+  .nav__marketplace,
+  .nav__rankings,
+  .nav__wallet,
+  .nav__sign-up {
+    display: none; }
+
+  .nav__burger-menu {
+    display: block; } }
+.footer {
+  background-color: #3b3b3b;
+  padding: 40px 0px 40px; }
+  .footer__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px; }
+  .footer__section-one {
+    width: 245px; }
+  .footer__section-three {
+    width: 420px; }
+  .footer__logo {
+    margin-bottom: 27px; }
+    .footer__logo a {
+      display: contents; }
+  .footer__text {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #CCCCCC;
+    margin-bottom: 20px; }
+  .footer__title {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 160%;
+    color: #fff;
+    margin-bottom: 25px; }
+  .footer__icons {
+    display: flex;
+    gap: 10px; }
+  .footer__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+  .footer__subscrube-form {
+    width: 420px;
+    height: 60px;
+    display: flex;
+    position: relative; }
+  .footer__form-input {
+    padding: 0px 220px 0px 20px;
+    border-radius: 20px;
+    width: 100%;
+    outline: none; }
+    .footer__form-input::placeholder {
+      font-family: 'Work Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: #2B2B2B; }
+  .footer__form-button {
+    width: 211px;
+    height: 60px;
+    right: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    border-radius: 20px;
+    background-color: #A259FF;
+    padding: 0px 50px 0px 50px;
+    transition: .35s; }
+    .footer__form-button:hover {
+      transform: scale(0.95);
+      cursor: pointer; }
+  .footer__button-img {
+    display: none; }
+  .footer__button-text {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #fff; }
+  .footer__footer {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    color: #CCCCCC;
+    padding-top: 20px;
+    border-top: 1px solid #858584; }
+
+@media screen and (min-width: 834px) and (max-width: 1279px) {
+  .footer {
+    background-color: #3b3b3b;
+    padding: 40px 0px 40px; }
+    .footer__row {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      margin-bottom: 30px; }
+    .footer__section-one {
+      width: 100%; }
+    .footer__section-three {
+      width: 100%; }
+    .footer__btn {
+      width: 420px; } }
+@media screen and (min-width: 375px) and (max-width: 834px) {
+  .footer {
+    background-color: #3b3b3b;
+    padding: 40px 0px 40px; }
+    .footer__row {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      margin-bottom: 30px; }
+    .footer__section-one {
+      width: 100%; }
+    .footer__section-three {
+      width: 100%; }
+    .footer__btn {
+      width: 420px; }
+    .footer__subscrube-form {
+      height: auto;
+      flex-direction: column;
+      row-gap: 16px;
+      position: static; }
+    .footer__form-input {
+      padding: 0px 20px;
+      height: 46px;
+      width: 315px; }
+    .footer__form-button {
+      width: 315px;
+      height: 46px;
+      position: static;
+      justify-content: center;
+      align-items: center;
+      column-gap: 12px;
+      padding: 0px 50px 0px 50px; }
+    .footer__button-img {
+      display: block;
+      width: 20px;
+      height: 20px; }
+    .footer__button-text {
+      font-family: 'Work Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 90%;
+      color: #fff; } }
+/*
+<a class="cards-row__item nft-card" href="#">
+   <img class="nft-img" src="./img/nft-img/Distant-Galaxy.png">
+   <div class="nft-info">
+       <div class="nft-name">Distant Galaxy</div>
+       <div class="artist-card">
+           <img class="artist-img" src="./img/avatars/Avatar-14.png">
+           <div class="artist-name">MoonDancer</div>
+       </div>
+       <div class="additional-info">
+           <div class="price-info">
+               <div class="price-info__mark">Price</div>
+               <div class="price-info__amount">1.63 ETH</div>
+           </div>
+           <div class="bid-info">
+               <div class="bid-info__mark">Highest Bid</div>
+               <div class="bid-info__amount">0.33 wETH</div>
+           </div>
+       </div>
+   </div>
+</a>
+*/
+.rankings__headline-subhead {
+  padding: 80px 0px; }
+.rankings__headline {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 51px;
+  line-height: 110%;
+  color: #fff;
+  margin-bottom: 20px; }
+.rankings__subhead {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  color: #fff; }
+.rankings__categories {
+  display: flex;
+  height: 60px; }
+.rankings__item {
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  padding: 14.5px 0px;
+  transition: 0.35s; }
+  .rankings__item:hover {
+    border-bottom: 1px solid #858584; }
+    .rankings__item:hover .rankings__categories-mark {
+      color: #fff; }
+.rankings__categories-mark {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  color: #858584; }
+.rankings__main-section {
+  padding: 40px 0px; }
+.rankings__table-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; }
+.rankings__table-head {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #858584;
+  height: 46px;
+  border: 1px solid #3B3B3B;
+  border-radius: 20px;
+  padding: 0px 20px; }
+.rankings .table-head__rank-artist {
+  display: flex;
+  column-gap: 20px;
+  align-items: center; }
+.rankings .table-head__rank {
+  width: 30px; }
+.rankings .table-head__stats {
+  display: flex;
+  column-gap: 20px;
+  align-items: center; }
+  .rankings .table-head__stats > * {
+    width: 160px; }
+.rankings .table-data__row {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px; }
+.rankings .table-data__item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3B3B3B;
+  border-radius: 20px;
+  padding: 12px 20px; }
+.rankings .table-data__rank-artist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px; }
+.rankings .table-data__rank {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  background-color: #2B2B2B;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 4px; }
+.rankings .table-data__artist {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  transition: 0.35s; }
+  .rankings .table-data__artist:hover {
+    transform: scale(0.95); }
+.rankings .table-data__artist-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px; }
+.rankings .table-data__artist-name {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  color: #ffF; }
+.rankings .table-data__stats {
+  display: flex;
+  align-items: center;
+  column-gap: 20px; }
+  .rankings .table-data__stats > * {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #fff;
+    width: 160px; }
+.rankings .table-data__change {
+  color: #00AC4F; }
+
+@media screen and (min-width: 834px) and (max-width: 1279px) {
+  .rankings__headline-subhead {
+    padding: 40px 0px; }
+  .rankings__headline {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    color: #fff;
+    margin-bottom: 20px; }
+  .rankings__subhead {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #fff; }
+  .rankings__categories-mark {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #858584; }
+  .rankings .table-data__item {
+    padding: 14.6px 20px; }
+  .rankings .table-data__rank {
+    background-color: inherit; }
+  .rankings .table-data__artist-icon {
+    width: 30px;
+    height: 30px; }
+  .rankings .table-head__sold,
+  .rankings .table-data__sold {
+    display: none; }
+  .rankings .table-head__stats > *,
+  .rankings .table-data__stats > * {
+    width: 100px; } }
+@media screen and (min-width: 375px) and (max-width: 834px) {
+  .rankings__headline-subhead {
+    padding: 30px 0px; }
+  .rankings__headline {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    color: #fff;
+    margin-bottom: 10px; }
+  .rankings__subhead {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #fff; }
+  .rankings__table-head {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    color: #858584; }
+  .rankings .table-data__item {
+    padding: 13px 18px; }
+  .rankings .table-data__rank-artist {
+    column-gap: 10px; }
+  .rankings .table-data__artist {
+    column-gap: 12px; }
+  .rankings .table-data__rank {
+    background-color: inherit;
+    width: 24px;
+    height: 24px;
+    padding-top: 6px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    color: #858584; }
+  .rankings .table-data__artist-icon {
+    width: 24px;
+    height: 24px; }
+  .rankings .table-data__artist-name {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #ffF; }
+  .rankings .table-data__volume {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    color: #fff; }
+  .rankings .table-head__sold,
+  .rankings .table-data__sold,
+  .rankings .table-head__change,
+  .rankings .table-data__change {
+    display: none; }
+  .rankings .table-head__stats > *,
+  .rankings .table-data__stats > * {
+    width: 80px; } }
+
+/*# sourceMappingURL=rankings.css.map */

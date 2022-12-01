@@ -1,0 +1,192 @@
+@import "../reset.scss",
+"../base.scss",
+"../mixins/fonts.scss",
+"../mixins/button-designer.scss",
+"../components/header.scss",
+"../components/footer.scss",
+"../mixins/nft-card.scss";
+
+.marketplace {
+
+    &__header {
+        padding: 80px 0px;
+    }
+
+    &__headline {
+        @include work-sans(600, 51px, 110%, #fff);
+        margin-bottom: 10px;
+    }
+
+    &__subhead {
+        @include work-sans(400, 22px, 160%, #fff);
+        margin-bottom: 30px;
+    }
+
+    &__search-form {
+        position: relative;
+    }
+
+    &__search-form input {
+        width: 100%;
+        height: 60px;
+        border: 1px solid #3B3B3B;
+        border-radius: 20px;
+        background-color: inherit;
+        outline: none;
+        padding: 18px 70px 18px 20px;
+
+
+        &::placeholder {
+            @include work-sans(400, 16px, 140%, #858584);
+        }
+
+        &:focus {
+            @include work-sans(400, 16px, 140%, #858584);
+        }
+    }
+
+    &__search-form img {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 18px;
+        right: 20px;
+    }
+
+    &__main-section {
+        padding-top: 10px;
+        border-top: 1px solid #3B3B3B;
+    }
+
+    &__nft-categories-row {
+        display: flex;
+        align-items: center;
+        height: 60px;
+    }
+
+    &__nft-category {
+        display: flex;
+        column-gap: 16px;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 50%;
+        transition: 0.1s;
+
+        &:hover {
+            border-bottom: 1px solid #858584;
+
+            .marketplace__nft-categories-mark {
+                color: #fff;
+            }
+
+            .marketplace__nft-categories-amount {
+                color: #fff;
+                background-color: #858584;
+            }
+        }
+    }
+
+    &__nft-categories-mark {
+        @include work-sans(600, 22px, 140%, #858584);
+        transition: 0.1s;
+    }
+
+    &__nft-categories-amount {
+        @include space-mono(400, 16px, 140%, #858584);
+        border-radius: 20px;
+        padding: 5px 10px;
+        background-color: #3B3B3B;
+        transition: 0.1s;
+    }
+
+    &__nft-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        padding: 60px 0px 80px;
+    }
+
+    .nft-card {
+        @include nft-card("desktop-tablet", #3B3B3B);
+    }
+}
+
+
+@media screen and (min-width:834px) and (max-width:1279px) {
+    .marketplace {
+
+        &__header {
+            padding: 60px 0px;
+        }
+
+        &__headline {
+            @include work-sans(600, 38px, 120%, #fff);
+        }
+
+        &__subhead {
+            @include work-sans(400, 16px, 140%, #fff);
+        }
+
+        &__nfts {
+            .marketplace__categories-mark {
+                @include work-sans(600, 16px, 140%, #fff);
+            }
+        }
+
+        &__collections {
+            .marketplace__categories-mark {
+                @include work-sans(600, 16px, 140%, #858584);
+            }
+        }
+
+        &__nft-cards {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:834px) {
+    .marketplace {
+
+        &__header {
+            padding: 40px 0px;
+        }
+
+        &__headline {
+            @include work-sans(600, 28px, 140%, #fff);
+        }
+
+        &__subhead {
+            @include work-sans(400, 16px, 140%, #fff);
+        }
+
+        &__nfts {
+            .marketplace__categories-mark {
+                @include work-sans(600, 16px, 140%, #fff);
+            }
+
+            .marketplace__categories-amount {
+                display: none;
+            }
+        }
+
+        &__collections {
+            .marketplace__categories-mark {
+                @include work-sans(600, 16px, 140%, #858584);
+            }
+
+            .marketplace__categories-amount {
+                display: none;
+            }
+        }
+
+        &__nft-cards {
+            grid-template-columns: 1fr;
+        }
+
+        .nft-card {
+            @include nft-card("mobile", #3B3B3B);
+        }
+    }
+}

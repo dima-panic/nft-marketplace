@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+a,
+a:visited,
+a:link{
+    text-decoration: none;   
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+    padding: 0px;
+    margin: 0px;
+}
+
+input{
+    padding: 0px;
+    margin: 0px;
+}
+
+a,img{
+    border:none;
+}

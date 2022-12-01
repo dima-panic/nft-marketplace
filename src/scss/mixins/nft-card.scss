@@ -1,0 +1,103 @@
+/*
+<a class="cards-row__item nft-card" href="#">
+   <img class="nft-img" src="./img/nft-img/Distant-Galaxy.png">
+   <div class="nft-info">
+       <div class="nft-name">Distant Galaxy</div>
+       <div class="artist-card">
+           <img class="artist-img" src="./img/avatars/Avatar-14.png">
+           <div class="artist-name">MoonDancer</div>
+       </div>
+       <div class="additional-info">
+           <div class="price-info">
+               <div class="price-info__mark">Price</div>
+               <div class="price-info__amount">1.63 ETH</div>
+           </div>
+           <div class="bid-info">
+               <div class="bid-info__mark">Highest Bid</div>
+               <div class="bid-info__amount">0.33 wETH</div>
+           </div>
+       </div>
+   </div>
+</a>
+*/
+@mixin nft-card($screen,$bg-color) {
+
+    @if ($screen =='desktop-tablet') {
+        width: 330px;
+        height: 469px;
+        
+        .nft-img {
+            width: 330px;
+            height: 296px;
+        }
+        .nft-info{
+            width: 330px;
+        }
+    }
+
+    @if ($screen =='mobile') {
+        width: 315px;
+        height: 469px;
+
+        .nft-img {
+            width: 315px;
+            height: 296px;
+        }
+
+        .nft-info{
+            width: 315px;
+        }
+    }
+
+    transition: 0.35s;
+
+    &:hover {
+        transform: scale(0.95);
+    }
+
+    .nft-img {
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .nft-info {
+        padding: 20px 30px 25px 30px;
+        background-color: $bg-color;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .nft-name {
+        @include work-sans(600, 22px, 140%, #fff);
+        margin-bottom: 5px;
+    }
+
+    .artist-card {
+        display: flex;
+        column-gap: 12px;
+        margin-bottom: 27px;
+    }
+
+    .artist-img {
+        width: 25px;
+        height: 25px;
+        border-radius: 120px;
+    }
+
+    .artist-name {
+        @include space-mono(400, 16px, 140%, #fff);
+    }
+
+    .additional-info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .price-info__mark,
+    .bid-info__mark {
+        @include space-mono(400, 12px, 110%, #858584);
+    }
+
+    .bid-info__amount,
+    .price-info__amount {
+        @include space-mono(400, 16px, 140%, #fff);
+    }
+}

@@ -1,0 +1,1236 @@
+@import "./reset.scss",
+"./base.scss",
+"./mixins/fonts.scss",
+"./components/header.scss",
+"./components/footer.scss",
+"./mixins/nft-card.scss",
+"./mixins/button-designer.scss";
+
+.hero-section {
+    background-color: rgba(43, 43, 43, 1);
+
+    &__wrap {
+        padding: 80px 0px 80px;
+        display: grid;
+        row-gap: 30px;
+        column-gap: 30px;
+        grid-template-areas:
+            "hls nft"
+            "button nft"
+            "ai nft";
+    }
+
+    &__head-line-subhead {
+        grid-area: hls;
+        width: 510px;
+        height: 347px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    &__head-line {
+        @include work-sans(600, 67px, 110%, #fff);
+    }
+
+    &__subhead {
+        @include work-sans(400, 22px, 160%, #fff);
+
+    }
+
+    .button {
+        @include button(224px, 60px, 'purple');
+    }
+
+    &__additional-info {
+        grid-area: ai;
+        width: 510px;
+        height: 77px;
+        display: flex;
+        column-gap: 30px;
+    }
+
+    &__additional-info-item {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+    }
+
+    &__additional-info-amount {
+        @include space-mono(700, 28px, 140%, #fff);
+    }
+
+    &__additional-info-description {
+        @include work-sans(400, 24px, 160%, #fff);
+    }
+
+    &__nft,
+    &__nft-img {
+        grid-area: nft;
+        width: 510px;
+        height: 510px;
+    }
+}
+
+@media screen and (min-width: 834px) and (max-width:1279px) {
+    .hero-section {
+        &__head-line-subhead {
+            width: 330px;
+            height: 224px;
+            row-gap: 20px;
+        }
+
+        &__head-line {
+            @include work-sans(600, 38px, 120%, #fff);
+        }
+
+        &__subhead {
+            @include work-sans(400, 16px, 140%, #fff);
+
+        }
+
+        &__additional-info {
+            width: 330px;
+            height: 57px;
+            column-gap: 20px;
+        }
+
+        &__additional-info-amount {
+            @include space-mono(700, 22px, 160%, #fff);
+        }
+
+        &__additional-info-description {
+            @include work-sans(400, 16px, 140%, #fff);
+        }
+
+        &__nft,
+        &__nft-img {
+            width: 330px;
+            height: 330px;
+        }
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:834px) {
+    .hero-section {
+        &__wrap {
+            padding: 40px 0px;
+            display: grid;
+            row-gap: 40px;
+            grid-template-areas:
+                "hls"
+                "nft"
+                "button"
+                "ai";
+        }
+
+        &__head-line-subhead {
+            width: 100%;
+            height: 154px;
+            row-gap: 10px;
+        }
+
+        &__head-line {
+            @include work-sans(600, 28px, 140%, #fff);
+        }
+
+        &__subhead {
+            @include work-sans(400, 16px, 140%, #fff);
+
+        }
+
+        &__nft,
+        &__nft-img {
+            width: 315px;
+            height: 315px;
+        }
+
+        .button {
+            @include button(315px, 60px, 'purple');
+        }
+
+        &__additional-info {
+            width: 100%;
+            height: 57px;
+            column-gap: 30px;
+        }
+
+        &__additional-info-item {
+            width: 85px;
+        }
+
+        &__additional-info-amount {
+            @include space-mono(700, 22px, 160%, #fff);
+        }
+
+        &__additional-info-description {
+            @include work-sans(400, 16px, 140%, #fff);
+        }
+
+    }
+}
+
+.trending-collection {
+
+    &__wrap {
+        padding: 80px 0px 80px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+    }
+
+    &__headline-subhead {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    &__headline {
+        @include work-sans(600, 38px, 120%, #fff);
+    }
+
+    &__subhead {
+        @include work-sans(400, 22px, 160%, #fff);
+    }
+
+    &__card-row {
+        display: flex;
+        column-gap: 30px;
+    }
+
+    &__card-row-item {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    &__card-info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    &__card-name {
+        @include work-sans(600, 22px, 140%, #fff);
+    }
+
+    &__card-photos {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    &__card-photos img,
+    &__subhead-number {
+        border-radius: 20px;
+        transition: 0.35s;
+
+        &:hover {
+            transform: scale(0.95);
+        }
+    }
+
+    &__head-photo img {
+        width: 330px;
+        height: 330px;
+    }
+
+    &__subhead-photo img,
+    &__subhead-number {
+        width: 100px;
+        height: 100px;
+    }
+
+    &__subhead-photos {
+        display: flex;
+        column-gap: 15px;
+    }
+
+    &__subhead-number {
+        background-color: rgba(162, 89, 255, 1);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include space-mono(700, 22px, 160%, #fff);
+    }
+
+    &__artist-card {
+        display: flex;
+        column-gap: 12px;
+    }
+
+    &__artist-img img {
+        border-radius: 120px;
+        transition: 0.35s;
+        width: 24px;
+        height: 24px;
+
+        &:hover {
+            transform: scale(0.95);
+        }
+    }
+
+    &__artist-name {
+        @include work-sans(400, 16px, 140%, #fff);
+    }
+}
+
+@media screen and (min-width: 834px) and (max-width:1279px) {
+    .trending-collection {
+
+        &__wrap {
+            padding: 40px 0px 40px;
+            row-gap: 40px;
+        }
+
+        &__headline {
+            @include work-sans(600, 28px, 140%, #fff);
+        }
+
+        &__subhead {
+            @include work-sans(400, 16px, 140%, #fff);
+        }
+
+        &__card-row-item:nth-last-child(1) {
+            display: none;
+        }
+
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:834px) {
+    .trending-collection {
+
+        &__wrap {
+            padding: 40px 0px;
+            row-gap: 40px;
+        }
+
+        &__headline {
+            @include work-sans(600, 28px, 140%, #fff);
+        }
+
+        &__subhead {
+            @include work-sans(400, 16px, 140%, #fff);
+        }
+
+        &__card-row-item:nth-last-child(-n+2) {
+            display: none;
+        }
+
+        &__head-photo img {
+            width: 315px;
+            height: 315px;
+        }
+
+        &__subhead-photo img,
+        &__subhead-number {
+            width: 95px;
+            height: 95px;
+        }
+    }
+}
+
+.top-artists {
+
+    &__wrap {
+        padding: 80px 0px 80px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__headline-subhead {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    &__headline {
+        @include work-sans(600, 38px, 120%, #fff);
+    }
+
+    &__subhead {
+        @include work-sans(400, 22px, 160%, #fff);
+    }
+
+    .button__desktop-tablet {
+        @include button(247px, 60px, 'none');
+    }
+
+    .button__mobile {
+        display: none;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    .artist__card {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        background-color: rgba(59, 59, 59, 1);
+        border-radius: 20px;
+        align-items: center;
+        position: relative;
+        transition: 0.35s;
+
+        &:hover {
+            transform: scale(0.95);
+        }
+    }
+
+    .artist__avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 100px;
+    }
+
+    .artist__info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        align-items: center;
+    }
+
+    .artist__name {
+        @include work-sans(600, 22px, 140%, #fff);
+    }
+
+    .artist__additional-info {
+        display: flex;
+        column-gap: 10px;
+    }
+
+    .artist__total-sales {
+        @include work-sans(400, 16px, 140%, #858584);
+    }
+
+    .artist__total-sales-amount {
+        @include space-mono(400, 16px, 140%, #fff);
+    }
+
+    .artist__serial-number {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        border-radius: 100px;
+        width: 30px;
+        height: 30px;
+        background-color: rgba(43, 43, 43, 1);
+        text-align: center;
+        @include space-mono(400, 16px, 30px, #858584);
+    }
+}
+
+@media screen and (min-width: 834px) and (max-width:1279px) {
+    .top-artists {
+
+        &__wrap {
+            padding: 40px 0px 40px;
+            row-gap: 40px;
+        }
+
+        &__header {
+            column-gap: 20px;
+        }
+
+        &__headline {
+            @include work-sans(600, 28px, 140%, #fff);
+        }
+
+        &__subhead {
+            @include work-sans(400, 16px, 140%, #fff);
+        }
+
+        .button__desktop-tablet {
+            @include button(247px, 60px, none);
+        }
+
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .artist__card:nth-last-child(-n+6) {
+            display: none;
+        }
+
+        .artist__card {
+            flex-direction: row;
+            align-items: center;
+            column-gap: 20px;
+        }
+
+        .artist__avatar {
+            width: 60px;
+            height: 60px;
+        }
+
+        .artist__info {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .artist__serial-number {
+            left: 13px;
+            top: 13px;
+        }
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width:834px) {
+    .top-artists {
+
+        &__wrap {
+            padding: 40px 0px 40px;
+            row-gap: 40px;
+        }
+
+        &__header {
+            column-gap: 10px;
+        }
+
+        &__headline {
+            @include work-sans(600, 28px, 140%, #fff);
+        }
+
+        &__subhead {
+            @include work-sans(400, 16px, 140%, #fff);
+        }
+
+        .button__desktop-tablet {
+            display: none;
+        }
+
+        &__grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .artist__card:nth-last-child(-n+7) {
+            display: none;
+        }
+
+        .artist__card {
+            flex-direction: row;
+            align-items: center;
+            column-gap: 20px;
+        }
+
+        .artist__avatar {
+            width: 60px;
+            height: 60px;
+        }
+
+        .artist__info {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .artist__serial-number {
+            left: 13px;
+            top: 13px;
+        }
+
+        .button__mobile {
+            @include button(315px, 60px, 'none');
+        }
+    }
+}
+
+.browse-categories {
+    &__wrap {
+        padding: 80px 0px 80px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+    }
+
+    &__headline-subhead {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    &__headline {
+        @include work-sans(600, 38px, 120%, #fff);
+    }
+
+    &__subhead {
+        @include work-sans(400, 22px, 160%, #fff);
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    .category__card {
+        position: relative;
+        transition: 0.35s;
+
+        &:hover {
+            transform: scale(0.95);
+        }
+    }
+
+    .category__img {
+        filter: blur(1.5px);
+    }
+
+    .category__icon {
+        position: absolute;
+        top: 70px;
+        left: 70px;
+    }
+
+    .category__name {
+        background-color: rgba(59, 59, 59, 1);
+        @include work-sans(600, 22px, 140%, #fff);
+        padding: 20px 30px 25px;
+        border-radius: 0px 0px 20px 20px;
+    }
+}
+
+@media screen and (min-width: 834px) and (max-width:1279px) {
+    .browse-categories {
+        &__wrap {
+            padding: 40px 0px 40px;
+            row-gap: 40px;
+        }
+
+        &__headline {
+            @include work-sans(600, 28px, 120%, #fff);
+        }
+
+        .category__img {
+            width: 150px;
+            height: 142px;
+        }
+
+        .category__icon {
+            top: 31px;
+            left: 35px;
+            width: 80px;
+            height: 80px;
+        }
+
+        .category__name {
+            @include work-sans(600, 12px, 140%, #fff);
+            padding: 20px 20px 47px 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width:834px) {
+    .browse-categories {
+        &__wrap {
+            padding: 40px 0px 40px;
+            row-gap: 40px;
+        }
+
+        &__headline {
+            @include work-sans(600, 28px, 120%, #fff);
+        }
+
+        &__row {
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .category__img {
+            width: 150px;
+            height: 142px;
+        }
+
+        .category__icon {
+            top: 31px;
+            left: 35px;
+            width: 80px;
+            height: 80px;
+        }
+
+        .category__name {
+            @include work-sans(600, 12px, 140%, #fff);
+            padding: 20px 20px 47px 20px;
+        }
+    }
+}
+
+.more-nft {
+    &__wrap {
+        padding: 80px 0px 80px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__headline-subhead {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    &__headline {
+        @include work-sans(600, 38px, 120%, #fff);
+    }
+
+    &__subhead {
+        @include work-sans(400, 22px, 160%, #fff);
+    }
+
+    .button__desktop-tablet {
+        @include button(187px, 60px, 'none');
+    }
+
+    &__cards-row {
+        display: flex;
+        column-gap: 30px;
+    }
+
+    .nft-card {
+        @include nft-card("desktop-tablet",#3B3B3B);
+    }
+
+    .button__mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 834px) and (max-width:1279px) {
+    .more-nft {
+        &__wrap {
+            padding: 40px 0px 40px;
+            row-gap: 40px;
+        }
+
+        &__headline {
+            @include work-sans(600, 28px, 140%, #fff);
+        }
+
+        &__subhead {
+            @include work-sans(400, 16px, 140%, #fff);
+        }
+
+        .cards-row__item:nth-last-child(1) {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width:834px) {
+    .more-nft {
+        &__wrap {
+            padding: 40px 0px 40px;
+            row-gap: 40px;
+        }
+
+        &__headline {
+            @include work-sans(600, 28px, 140%, #fff);
+        }
+
+        &__subhead {
+            @include work-sans(400, 16px, 140%, #fff);
+        }
+
+        .button__desktop-tablet {
+            display: none;
+        }
+
+        &__cards-row {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        .nft-card {
+            @include nft-card("mobile",#3B3B3B);
+        }
+
+        .button__mobile {
+            @include button(315px, 60px, none);
+        }
+    }
+}
+
+.magic-mashroom {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0), rgba(162, 89, 255, 1)),
+        url('../img/magic-mashroom/magic-mashroom.png');
+    background-size: cover;
+    background-position: center;
+    height: 640px;
+
+    &__row {
+        padding-top: 360px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__sub-row>*+* {
+        margin-top: 30px;
+    }
+
+    &__name {
+        @include work-sans(600, 51px, 120%, #fff);
+    }
+
+    &__artist-card {
+        display: inline-flex;
+        column-gap: 12px;
+        background-color: #3B3B3B;
+        border-radius: 20px;
+        padding: 11px 20px 11px 20px;
+        transition: 0.35s;
+
+        &:hover {
+            transform: scale(0.95);
+        }
+    }
+
+    &__artist-img {
+        border-radius: 120px;
+        width: 24px;
+        height: 24px;
+    }
+
+    &__artist-name {
+        @include work-sans(400, 16px, 140%, #fff);
+    }
+
+    .button__desktop-tablet {
+        @include button(198px, 60px, 'white');
+    }
+
+    .button__mobile {
+        display: none;
+    }
+}
+
+.magic-mashroom__timer {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgba(59, 59, 59, 0.5);
+    height: 100%;
+
+    .timer {
+        display: flex;
+        column-gap: 10px;
+    }
+
+    .timer__header {
+        @include space-mono(400, 12px, 110%, #fff);
+        margin-bottom: 10px;
+    }
+
+    .timer__text {
+        @include space-mono(400, 12px, 110%, #fff);
+        margin-top: 5px;
+    }
+
+    .timer__amount {
+        @include space-mono(700, 38px, 120%, #fff);
+    }
+
+    .timer__colon {
+        @include space-mono(700, 28px, 140%, #fff);
+    }
+}
+
+@media screen and (min-width: 834px) and (max-width:1279px) {
+    .magic-mashroom {
+
+        &__name {
+            @include work-sans(600, 38px, 120%, #fff);
+        }
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width:834px) {
+    .magic-mashroom {
+        &__row {
+            padding-top: 120px;
+            flex-direction: column;
+            row-gap: 40px;
+
+        }
+
+        .button__desktop-tablet {
+            display: none;
+        }
+
+        .button__mobile {
+            @include button(315px, 60px, 'white');
+        }
+    }
+
+    .magic-mashroom__timer {
+        width: 315px;
+
+        .timer {
+            justify-content: space-between;
+        }
+    }
+}
+
+.how-it-works {
+    &__wrap {
+        padding: 80px 0px 80px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 48px;
+    }
+
+    &__headline-subhead {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    &__headline {
+        @include work-sans(600, 38px, 120%, #fff);
+    }
+
+    &__subhead {
+        @include work-sans(400, 22px, 160%, #fff);
+    }
+
+    &__row {
+        display: flex;
+        column-gap: 30px;
+        justify-content: space-between;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        width: 100%;
+        background-color: rgba(59, 59, 59, 1);
+        border-radius: 20px;
+    }
+
+    .card__icon {
+        width: 250px;
+        height: 250px;
+        margin: 10px 40px 0px 40px;
+    }
+
+    .card__details {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        margin: 0px 30px 30px 30px;
+    }
+
+    .card__head {
+        @include work-sans(600, 22px, 140%, #fff);
+        text-align: center;
+    }
+
+    .card__info {
+        @include work-sans(400, 16px, 140%, #fff);
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 834px) and (max-width:1279px) {
+    .how-it-works {
+        &__wrap {
+            padding: 40px 0px 40px;
+            row-gap: 40px;
+        }
+
+        &__headline {
+            @include work-sans(600, 28px, 140%, #fff);
+        }
+
+        &__subhead {
+            @include work-sans(400, 16px, 140%, #fff);
+        }
+
+        .card__icon {
+            width: 160px;
+            height: 160px;
+            margin: 10px 25px 0px 25px;
+        }
+
+        .card__details {
+            margin: 0px 20px 30px 20px;
+        }
+
+        .card__head {
+            @include work-sans(600, 16px, 140%, #fff);
+        }
+
+        .card__info {
+            @include work-sans(400, 12px, 140%, #fff);
+        }
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width:834px) {
+    .how-it-works {
+        &__wrap {
+            padding: 40px 0px 40px;
+            row-gap: 40px;
+        }
+
+        &__headline {
+            @include work-sans(600, 28px, 140%, #fff);
+        }
+
+        &__subhead {
+            @include work-sans(400, 16px, 140%, #fff);
+        }
+
+        &__row {
+            display: flex;
+            row-gap: 20px;
+            flex-direction: column;
+        }
+
+        &__card {
+            flex-direction: row;
+            column-gap: 20px;
+        }
+
+        .card__icon {
+            width: 100px;
+            height: 100px;
+            margin: 28.5px 0px 28.5px 20px;
+        }
+
+        .card__details {
+            margin: 20px 20px 20px 0px;
+        }
+
+        .card__head {
+            @include work-sans(600, 16px, 140%, #fff);
+            text-align: left;
+        }
+
+        .card__info {
+            @include work-sans(400, 12px, 140%, #fff);
+            text-align: left;
+        }
+    }
+}
+
+.subscrube-widget {
+    &__wrap {
+        padding: 40px 0px 80px;
+    }
+
+    &__row {
+        display: flex;
+        column-gap: 80px;
+        background-color: rgba(59, 59, 59, 1);
+        padding: 60px;
+        border-radius: 20px;
+    }
+
+    &__sub-row {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    &__img {
+        border-radius: 20px;
+        width: 425px;
+        height: 310px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__headline-subhead {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    &__headline {
+        @include work-sans(600, 38px, 120%, #fff);
+    }
+
+    &__subhead {
+        @include work-sans(400, 22px, 160%, #fff);
+    }
+
+    &__subscrube-form {
+        height: 60px;
+        display: flex;
+        position: relative;
+    }
+
+    &__form-input {
+        &::placeholder {
+            @include work-sans(400, 16px, 140%, #2B2B2B);
+        }
+
+        padding: 0px 220px 0px 20px;
+        border-radius: 20px;
+        width: 100%;
+        outline: none;
+    }
+
+    &__form-button {
+        width: 211px;
+        height: 60px;
+        right: 0;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+        border-radius: 20px;
+        background-color: #A259FF;
+        padding: 0px 50px 0px 50px;
+        transition: .35s;
+
+        &:hover {
+            transform: scale(0.95);
+            cursor: pointer;
+        }
+    }
+
+    &__button-img {
+        width: 20px;
+        height: 20px;
+    }
+
+    &__button-text {
+        @include work-sans(600, 16px, 140%, #fff);
+    }
+
+}
+
+@media screen and (min-width: 834px) and (max-width:1279px) {
+    .subscrube-widget {
+
+        &__row {
+            padding: 40px 30px;
+            border-radius: 20px;
+            column-gap: 30px;
+        }
+
+        &__img {
+            width: 300px;
+            height: 280px;
+        }
+
+        &__headline {
+            @include work-sans(600, 28px, 140%, #fff);
+        }
+
+        &__subhead {
+            @include work-sans(400, 16px, 140%, #fff);
+        }
+
+        &__subscrube-form {
+            height: auto;
+            flex-direction: column;
+            row-gap: 16px;
+            position: static;
+        }
+
+        &__form-input {
+            padding: 0px 20px;
+            height: 46px;
+            width: 100%;
+        }
+
+        &__form-button {
+            width: 100%;
+            height: 46px;
+            position: static;
+            justify-content: center;
+            column-gap: 12px;
+            padding: 0px 50px 0px 50px;
+        }
+
+        &__button-img {
+            width: 20px;
+            height: 20px;
+        }
+
+        &__button-text {
+            @include work-sans(600, 16px, 140%, #fff);
+        }
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width:834px) {
+    .subscrube-widget {
+
+        &__row {
+            padding: 0px;
+            row-gap: 30px;
+            flex-direction: column;
+            background-color: rgba(43, 43, 43, 1);
+        }
+
+        &__img {
+            width: 315px;
+            height: 255px;
+        }
+
+        &__headline {
+            @include work-sans(600, 28px, 140%, #fff);
+        }
+
+        &__subhead {
+            @include work-sans(400, 16px, 140%, #fff);
+        }
+
+        &__subscrube-form {
+            height: auto;
+            flex-direction: column;
+            row-gap: 16px;
+            position: static;
+        }
+
+        &__form-input {
+            padding: 0px 20px;
+            height: 46px;
+            width: 100%;
+        }
+
+        &__form-button {
+            width: 100%;
+            height: 46px;
+            position: static;
+            justify-content: center;
+            align-items: center;
+            column-gap: 12px;
+            padding: 0px 50px 0px 50px;
+        }
+
+        &__button-img {
+            width: 20px;
+            height: 20px;
+        }
+
+        &__button-text {
+            @include work-sans(600, 16px, 90%, #fff);
+        }
+    }
+}

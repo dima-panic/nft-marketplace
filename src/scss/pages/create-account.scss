@@ -1,0 +1,192 @@
+@import "../reset.scss",
+"../base.scss",
+"../mixins/fonts.scss",
+"../mixins/button-designer.scss",
+"../components/header.scss",
+"../components/footer.scss";
+
+.create-account {
+    &__wrap {
+        display: flex;
+        column-gap: 60px;
+        height: 691px;
+        width: 100%;
+    }
+
+    &__img{
+        width: 50%;
+        object-fit: cover;
+    }
+
+    &__row {
+        padding: 100px 0px;
+        width: 50%;
+    }
+
+    &__header {
+        @include work-sans(600, 51px, 110%, #fff);
+        margin-bottom: 20px;
+        width: 460px;
+    }
+
+    &__headline {
+        @include work-sans(400, 22px, 160%, #fff);
+        margin-bottom: 40px;
+        width: 460px;
+    }
+
+    &__forms form+form {
+        margin-top: 15px;
+    }
+
+    .user-name:before {
+        background: url("../../img/buttons/User.svg") no-repeat;
+        background-size: cover;
+    }
+
+    .email-address:before {
+        background: url("../../img/buttons/EnvelopeSimple.svg") no-repeat;
+        background-size: cover;
+    }
+
+    .password:before {
+        background: url("../../img/buttons/LockKey.svg") no-repeat;
+        background-size: cover;
+    }
+
+    .confirm-password:before {
+        background: url("../../img/buttons/LockKey.svg") no-repeat;
+        background-size: cover;
+    }
+
+    &__input-form {
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 13px;
+            left: 20px;
+            width: 20px;
+            height: 20px;
+            background-size: cover;
+            filter: brightness(0) saturate(100%) invert(35%) sepia(98%) saturate(668%) hue-rotate(231deg) brightness(105%) contrast(108%);
+        }
+
+        input {
+            width: 330px;
+            height: 46px;
+            padding: 12px 20px 12px 52px;
+            border-radius: 20px;
+            outline: none;
+
+            &::placeholder {
+                @include work-sans(400, 16px, 140%, rgba(43, 43, 43, 1));
+            }
+        }
+    }
+
+    
+
+    &__form-button {
+        margin-top: 30px;
+        width: 330px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 12px;
+        border-radius: 20px;
+        background-color: #A259FF;
+        padding: 0px 50px 0px 50px;
+        transition: .35s;
+
+        &:hover {
+            transform: scale(0.95);
+            cursor: pointer;
+        }
+    }
+
+    &__button-text {
+        @include work-sans(600, 16px, 140%, #fff);
+    }
+}
+
+@media screen and (min-width: 834px) and (max-width:1279px) {
+    .create-account {
+        &__wrap {
+            column-gap: 40px;
+            margin: 0 auto;
+            height: 615px;
+        }
+        
+        &__row {
+            padding: 80px 0px;
+        }
+
+        &__header {
+            @include work-sans(600, 38px, 120%, #fff);
+            width: 325px;
+        }
+
+        &__headline {
+            @include work-sans(400, 16px, 140%, #fff);
+            width: 325px;
+        }
+
+        &__input-form input {
+            width: 325px;
+        }
+
+        &__form-button {
+            width: 325px;
+        }
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width:834px) {
+    .create-account {
+        &__wrap {
+            column-gap: 0px;
+            flex-direction: column;
+            height: 747px;
+        }
+
+        &__img{
+            width: 100%;
+            height: 232px;
+        }
+        
+        &__row {
+            padding: 30px 30px 40px 30px;
+            width: 375px;
+            margin: 0 auto;
+        }
+
+        &__header {
+            @include work-sans(600, 38px, 120%, #fff);
+            width: 315px;
+        }
+
+        &__headline {
+            @include work-sans(400, 16px, 140%, #fff);
+            width: 315px;
+        }
+
+        &__forms form+form {
+            margin-top: 15px;
+        }
+
+        &__input-form input {
+            width: 315px;
+        }
+
+        &__form-button {
+            width: 315px;
+        }
+
+        &__button-text {
+            @include work-sans(600, 16px, 140%, #fff);
+        }
+    }
+}

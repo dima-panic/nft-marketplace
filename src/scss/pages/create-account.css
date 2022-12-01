@@ -1,0 +1,429 @@
+*,
+*::after,
+*::before {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: none;
+  box-sizing: border-box; }
+
+body {
+  margin: 0px; }
+
+a,
+a:visited,
+a:link {
+  text-decoration: none; }
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  padding: 0px;
+  margin: 0px; }
+
+input {
+  padding: 0px;
+  margin: 0px; }
+
+a, img {
+  border: none; }
+
+body {
+  background-color: #2B2B2B; }
+
+.container {
+  width: 1280px;
+  padding: 0px 115px 0px 115px;
+  margin: 0 auto; }
+
+img {
+  display: block; }
+
+@media screen and (min-width: 834px) and (max-width: 1279px) {
+  .container {
+    width: 834px;
+    padding: 0px 72px 0px 72px; } }
+@media screen and (min-width: 375px) and (max-width: 834px) {
+  .container {
+    width: 375px;
+    padding: 0px 30px; } }
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  padding: 0px 50px 0px 50px; }
+
+.header__nav {
+  display: flex;
+  column-gap: 10px;
+  height: 60px;
+  align-items: center; }
+
+.nav__text {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff; }
+.nav__item {
+  padding: 12px 20px 12px 20px;
+  transition: 0.35s; }
+  .nav__item:hover {
+    transform: scale(0.95); }
+.nav__item_active {
+  display: flex;
+  column-gap: 12px;
+  padding: 0px 30px 0px 30px;
+  background-color: #a259ff;
+  border-radius: 20px;
+  align-items: center;
+  height: 60px; }
+  .nav__item_active img {
+    width: 20px;
+    height: 20px; }
+.nav__burger-menu {
+  display: none; }
+
+@media screen and (min-width: 834px) and (max-width: 1279px) {
+  .header__row {
+    height: 54px; }
+
+  .logo_link-img {
+    width: 182px;
+    height: 24px; }
+
+  .nav__marketplace,
+  .nav__rankings,
+  .nav__wallet,
+  .nav__sign-up {
+    display: none; }
+
+  .nav__burger-menu {
+    display: block; } }
+@media screen and (min-width: 375px) and (max-width: 834px) {
+  .header__row {
+    padding: 0px 30px;
+    height: 54px; }
+
+  .logo_link-img {
+    width: 182px;
+    height: 24px; }
+
+  .nav__marketplace,
+  .nav__rankings,
+  .nav__wallet,
+  .nav__sign-up {
+    display: none; }
+
+  .nav__burger-menu {
+    display: block; } }
+.footer {
+  background-color: #3b3b3b;
+  padding: 40px 0px 40px; }
+  .footer__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px; }
+  .footer__section-one {
+    width: 245px; }
+  .footer__section-three {
+    width: 420px; }
+  .footer__logo {
+    margin-bottom: 27px; }
+    .footer__logo a {
+      display: contents; }
+  .footer__text {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #CCCCCC;
+    margin-bottom: 20px; }
+  .footer__title {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 160%;
+    color: #fff;
+    margin-bottom: 25px; }
+  .footer__icons {
+    display: flex;
+    gap: 10px; }
+  .footer__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+  .footer__subscrube-form {
+    width: 420px;
+    height: 60px;
+    display: flex;
+    position: relative; }
+  .footer__form-input {
+    padding: 0px 220px 0px 20px;
+    border-radius: 20px;
+    width: 100%;
+    outline: none; }
+    .footer__form-input::placeholder {
+      font-family: 'Work Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: #2B2B2B; }
+  .footer__form-button {
+    width: 211px;
+    height: 60px;
+    right: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    border-radius: 20px;
+    background-color: #A259FF;
+    padding: 0px 50px 0px 50px;
+    transition: .35s; }
+    .footer__form-button:hover {
+      transform: scale(0.95);
+      cursor: pointer; }
+  .footer__button-img {
+    display: none; }
+  .footer__button-text {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #fff; }
+  .footer__footer {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    color: #CCCCCC;
+    padding-top: 20px;
+    border-top: 1px solid #858584; }
+
+@media screen and (min-width: 834px) and (max-width: 1279px) {
+  .footer {
+    background-color: #3b3b3b;
+    padding: 40px 0px 40px; }
+    .footer__row {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      margin-bottom: 30px; }
+    .footer__section-one {
+      width: 100%; }
+    .footer__section-three {
+      width: 100%; }
+    .footer__btn {
+      width: 420px; } }
+@media screen and (min-width: 375px) and (max-width: 834px) {
+  .footer {
+    background-color: #3b3b3b;
+    padding: 40px 0px 40px; }
+    .footer__row {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      margin-bottom: 30px; }
+    .footer__section-one {
+      width: 100%; }
+    .footer__section-three {
+      width: 100%; }
+    .footer__btn {
+      width: 420px; }
+    .footer__subscrube-form {
+      height: auto;
+      flex-direction: column;
+      row-gap: 16px;
+      position: static; }
+    .footer__form-input {
+      padding: 0px 20px;
+      height: 46px;
+      width: 315px; }
+    .footer__form-button {
+      width: 315px;
+      height: 46px;
+      position: static;
+      justify-content: center;
+      align-items: center;
+      column-gap: 12px;
+      padding: 0px 50px 0px 50px; }
+    .footer__button-img {
+      display: block;
+      width: 20px;
+      height: 20px; }
+    .footer__button-text {
+      font-family: 'Work Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 90%;
+      color: #fff; } }
+.create-account__wrap {
+  display: flex;
+  column-gap: 60px;
+  height: 691px;
+  width: 100%; }
+.create-account__img {
+  width: 50%;
+  object-fit: cover; }
+.create-account__row {
+  padding: 100px 0px;
+  width: 50%; }
+.create-account__header {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 51px;
+  line-height: 110%;
+  color: #fff;
+  margin-bottom: 20px;
+  width: 460px; }
+.create-account__headline {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  color: #fff;
+  margin-bottom: 40px;
+  width: 460px; }
+.create-account__forms form + form {
+  margin-top: 15px; }
+.create-account .user-name:before {
+  background: url("../../img/buttons/User.svg") no-repeat;
+  background-size: cover; }
+.create-account .email-address:before {
+  background: url("../../img/buttons/EnvelopeSimple.svg") no-repeat;
+  background-size: cover; }
+.create-account .password:before {
+  background: url("../../img/buttons/LockKey.svg") no-repeat;
+  background-size: cover; }
+.create-account .confirm-password:before {
+  background: url("../../img/buttons/LockKey.svg") no-repeat;
+  background-size: cover; }
+.create-account__input-form {
+  position: relative; }
+  .create-account__input-form:before {
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    filter: brightness(0) saturate(100%) invert(35%) sepia(98%) saturate(668%) hue-rotate(231deg) brightness(105%) contrast(108%); }
+  .create-account__input-form input {
+    width: 330px;
+    height: 46px;
+    padding: 12px 20px 12px 52px;
+    border-radius: 20px;
+    outline: none; }
+    .create-account__input-form input::placeholder {
+      font-family: 'Work Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: #2b2b2b; }
+.create-account__form-button {
+  margin-top: 30px;
+  width: 330px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+  border-radius: 20px;
+  background-color: #A259FF;
+  padding: 0px 50px 0px 50px;
+  transition: .35s; }
+  .create-account__form-button:hover {
+    transform: scale(0.95);
+    cursor: pointer; }
+.create-account__button-text {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff; }
+
+@media screen and (min-width: 834px) and (max-width: 1279px) {
+  .create-account__wrap {
+    column-gap: 40px;
+    margin: 0 auto;
+    height: 615px; }
+  .create-account__row {
+    padding: 80px 0px; }
+  .create-account__header {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    color: #fff;
+    width: 325px; }
+  .create-account__headline {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #fff;
+    width: 325px; }
+  .create-account__input-form input {
+    width: 325px; }
+  .create-account__form-button {
+    width: 325px; } }
+@media screen and (min-width: 375px) and (max-width: 834px) {
+  .create-account__wrap {
+    column-gap: 0px;
+    flex-direction: column;
+    height: 747px; }
+  .create-account__img {
+    width: 100%;
+    height: 232px; }
+  .create-account__row {
+    padding: 30px 30px 40px 30px;
+    width: 375px;
+    margin: 0 auto; }
+  .create-account__header {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    color: #fff;
+    width: 315px; }
+  .create-account__headline {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #fff;
+    width: 315px; }
+  .create-account__forms form + form {
+    margin-top: 15px; }
+  .create-account__input-form input {
+    width: 315px; }
+  .create-account__form-button {
+    width: 315px; }
+  .create-account__button-text {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #fff; } }

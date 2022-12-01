@@ -1,0 +1,395 @@
+@import "../reset.scss",
+"../base.scss",
+"../mixins/fonts.scss",
+"../mixins/button-designer.scss",
+"../components/header.scss",
+"../components/footer.scss",
+"../mixins/nft-card.scss";
+
+
+.nft-page {
+    &__header {
+        height: 560px;
+        background-image: url("../../img/nft-page/Image.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__nft-info-section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        padding: 40px 0px;
+    }
+
+    &__headline-subhead {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    &__headline {
+        @include work-sans(600, 51px, 110%, #fff);
+    }
+
+    &__subhead {
+        @include work-sans(400, 22px, 160%, #858584);
+    }
+
+    .nft-page__timer {
+        position: absolute;
+        right: 0;
+        padding: 30px;
+        border-radius: 20px;
+        background-color: #3B3B3B;
+        height: 234px;
+        width: 295px;
+    }
+
+    .nft-page__timer .timer {
+        display: flex;
+        column-gap: 10px;
+    }
+
+    .nft-page__timer .timer__header {
+        @include space-mono(400, 12px, 110%, #fff);
+        margin-bottom: 10px;
+    }
+
+    .nft-page__timer .timer__text {
+        @include space-mono(400, 12px, 110%, #fff);
+        margin-top: 5px;
+    }
+
+    .nft-page__timer .timer__amount {
+        @include space-mono(700, 38px, 120%, #fff);
+    }
+
+    .nft-page__timer .timer__colon {
+        @include space-mono(700, 28px, 140%, #fff);
+    }
+
+    &__timer>.btn {
+        @include button(100%, 60px, "purple");
+        margin-top: 30px;
+    }
+
+    &__additional-info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        width: 605px;
+    }
+
+    &__creator {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    &__creator-title {
+        @include space-mono(700, 22px, 160%, #858584);
+    }
+
+    &__creator-card {
+        display: flex;
+        column-gap: 12px;
+        align-items: center;
+    }
+
+    &__creator-icon {
+        width: 24px;
+        height: 24px;
+        border-radius: 20px;
+    }
+
+    &__creator-name {
+        @include work-sans(600, 22px, 140%, #fff);
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    &__decription-title {
+        @include space-mono(700, 22px, 160%, #858584);
+    }
+
+    &__decription-text {
+        @include work-sans(400, 22px, 160%, #fff);
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    &__details-title {
+        @include space-mono(700, 22px, 160%, #858584);
+    }
+
+    &__details-weblink {
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+    }
+
+    &__details-weblink-icon {
+        width: 32px;
+        height: 32px;
+        transition: 0.35s;
+
+        &:hover {
+            transform: scale(0.9);
+        }
+    }
+
+    &__details-weblink-name {
+        @include work-sans(400, 22px, 160%, #fff);
+    }
+
+    &__tags {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    &__tags-title {
+        @include work-sans(600, 22px, 140%, #858584);
+    }
+
+    &__tags-row {
+        display: flex;
+        column-gap: 20px;
+    }
+
+    &__tags-item {
+        width: 150px;
+        height: 46px;
+        background-color: #3B3B3B;
+        border-radius: 20px;
+        text-transform: uppercase;
+        @include work-sans(600, 16px, 140%, #fff);
+        text-align: center;
+        padding: 12px 0px;
+        transition: 0.35s;
+
+        &:hover {
+            transform: scale(0.9);
+        }
+    }
+
+    .nfts-from-artist {
+        display: flex;
+        flex-direction: column;
+        row-gap: 74px;
+        padding: 80px 0px;
+        position: relative;
+    }
+
+    .nfts-from-artist__headline {
+        @include work-sans(600, 38px, 120%, #fff);
+    }
+
+    .nfts-from-artist__button {
+        position: absolute;
+        right: 0;
+    }
+
+    .nft-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    .nft-card {
+        @include nft-card("desktop-tablet", #3B3B3B);
+    }
+
+    .nfts-from-artist>.btn {
+        @include button(267px, 60px, "none");
+    }
+}
+
+@media screen and (min-width:834px) and (max-width:1279px) {
+    .nft-page {
+        &__header {
+            height: 420px;
+        }
+
+
+        &__headline {
+            @include work-sans(600, 38px, 120%, #fff);
+        }
+
+        &__subhead {
+            @include work-sans(400, 16px, 140%, #858584);
+        }
+
+        &__additional-info {
+            width: 365px;
+        }
+
+        &__creator-title {
+            @include space-mono(400, 16px, 140%, #858584);
+        }
+
+        &__creator-name {
+            @include work-sans(400, 16px, 140%, #fff);
+        }
+
+        &__decription-title {
+            @include space-mono(400, 16px, 140%, #858584);
+        }
+
+        &__decription-text {
+            @include work-sans(400, 16px, 140%, #fff);
+        }
+
+        &__details-title {
+            @include space-mono(400, 16px, 140%, #858584);
+        }
+
+        &__details-weblink-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        &__details-weblink-name {
+            @include work-sans(400, 16px, 140%, #fff);
+        }
+
+        &__tags-title {
+            @include work-sans(400, 22px, 140%, #858584);
+        }
+
+        &__tags-row {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        .nfts-from-artist {
+            padding: 40px 0px;
+        }
+
+        .nfts-from-artist__headline {
+            @include work-sans(600, 28px, 140%, #fff);
+        }
+
+        .nft-cards {
+            grid-template-columns: 1fr 1fr;
+        }
+
+
+
+    }
+
+}
+
+@media screen and (min-width:375px) and (max-width:834px) {
+    .nft-page {
+        &__header {
+            height: 320px;
+        }
+
+        &__nft-info-section {
+            position: static;
+            row-gap: 20px;
+        }
+
+        &__headline {
+            @include work-sans(600, 28px, 140%, #fff);
+        }
+
+        &__subhead {
+            @include work-sans(400, 16px, 140%, #858584);
+        }
+
+        .nft-page__timer {
+            position: static;
+            height: 234px;
+            width: 315px;
+        }
+
+        .nft-page__timer .timer {
+            column-gap: 0px;
+            justify-content: space-between;
+        }
+
+        &__additional-info {
+            width: 315px;
+        }
+
+        &__creator-title {
+            @include space-mono(400, 16px, 140%, #858584);
+        }
+
+        &__creator-name {
+            @include work-sans(400, 16px, 140%, #fff);
+        }
+
+        &__decription-title {
+            @include space-mono(400, 16px, 140%, #858584);
+        }
+
+        &__decription-text {
+            @include work-sans(400, 16px, 140%, #fff);
+        }
+
+        &__details-title {
+            @include space-mono(400, 16px, 140%, #858584);
+        }
+
+        &__details-weblink-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        &__details-weblink-name {
+            @include work-sans(400, 16px, 140%, #fff);
+        }
+
+        &__tags-title {
+            @include work-sans(400, 22px, 140%, #858584);
+        }
+
+        &__tags-row {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+
+
+
+        .nfts-from-artist {
+            row-gap: 30px;
+            padding: 40px 0px;
+            position: static;
+        }
+
+        .nfts-from-artist__headline {
+            @include work-sans(600, 28px, 140%, #fff);
+        }
+
+        .nft-cards {
+            grid-template-columns: 1fr;
+        }
+
+        .nft-card {
+            @include nft-card("mobile", #3B3B3B);
+        }
+
+        .nft-card:nth-last-child(-n+6) {
+            display: none;
+        }
+
+        .nfts-from-artist>.btn {
+            position: static;
+            @include button(315px, 60px, "none");
+        }
+    }
+}

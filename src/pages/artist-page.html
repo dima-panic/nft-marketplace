@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../scss/pages/artist-page.css">
+    <title>Artist page</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__row">
+            <div class="header__logo">
+                <a href="../index.html" class="logo_link">
+                    <img class="logo_link-img" src="../img/header/Logo.svg">
+
+                </a>
+            </div>
+            <nav class="header__nav">
+                <a class="nav__marketplace" href="./marketplace.html">
+                    <div class="nav__item">
+                        <div class="nav__text">Marketplace</div>
+                    </div>
+                </a>
+                <a class="nav__rankings" href="./rankings.html">
+                    <div class="nav__item">
+                        <div class="nav__text">Rankings</div>
+                    </div>
+                </a>
+                <a class="nav__wallet" href="./connect-wallet.html">
+                    <div class="nav__item">
+                        <div class="nav__text">Connect a wallet</div>
+                    </div>
+                </a>
+                <a class="nav__sign-up" href="./create-account.html">
+                    <div class="nav__item nav__item_active">
+                        <img src="../img/header/User.svg">
+                        <div class="nav__text">Sign Up</div>
+                    </div>
+                </a>
+                <a class="nav__burger-menu" href="#"><img src="../img/buttons/Burger Menu.svg"></a>
+            </nav>
+        </div>
+    </header>
+    <section class="artist-page">
+        <div class="artist-page__header">
+            <div class="container">
+                <a href="#"><img class="artist-page__icon" src="../img/avatars/Avatar-12.png"></a>
+            </div>
+        </div>
+        <div class="artist-page__info-section">
+            <div class="container">
+                <div class="artist-page__info-buttons">
+                    <div class="artist-page__info">
+                        <div class="artist-page__name">Animakid</div>
+                        <div class="artist-page__buttons">
+                            <a class="artist-page__button-wallet btn" href="#">
+                                <img class="btn-logo" src="../img/buttons/Copy.svg">
+                                <div class="btn-text">0xc0E3...B79C</div>
+                            </a>
+                            <a class="artist-page__button-follow btn" href="#">
+                                <img class="btn-logo" src="../img/buttons/Plus.svg">
+                                <div class="btn-text">Follow</div>
+                            </a>
+                        </div>
+                        <div class="artist-page__stats">
+                            <div class="artist-page__stats-info-item">
+                                <div class="artist-page__stats-info-amount">240k+</div>
+                                <div class="artist-page__stats-info-description">Volume</div>
+                            </div>
+                            <div class="artist-page__stats-info-item">
+                                <div class="artist-page__stats-info-amount">50+</div>
+                                <div class="artist-page__stats-info-description">NFTS Sold</div>
+                            </div>
+                            <div class="artist-page__stats-info-item">
+                                <div class="artist-page__stats-info-amount">3000+</div>
+                                <div class="artist-page__stats-info-description">Followers</div>
+                            </div>
+                        </div>
+                        <div class="artist-page__bio">
+                            <div class="artist-page__bio-title">Bio</div>
+                            <div class="artist-page__bio-description">The internet's friendliest designer kid.</div>
+                        </div>
+                        <div class="artist-page__social">
+                            <div class="artist-page__social-title">Links</div>
+                            <div class="artist-page__social-links-row">
+                                <a href="https://www.youtube.com/"><img class="artist-page__social-link" src="../img/buttons/YoutubeLogo.svg"></a>
+                                <a href="https://discord.com/"><img class="artist-page__social-link" src="../img/buttons/DiscordLogo.svg"></a>
+                                <a href="https://twitter.com/?lang=ru"><img class="artist-page__social-link" src="../img/buttons/TwitterLogo.svg"></a>
+                                <a href="https://www.instagram.com/"><img class="artist-page__social-link" src="../img/buttons/InstagramLogo.svg"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artist-page__buttons">
+                        <a class="artist-page__button-wallet btn" href="#">
+                            <img class="btn-logo" src="../img/buttons/Copy.svg">
+                            <div class="btn-text">0xc0E3...B79C</div>
+                        </a>
+                        <a class="artist-page__button-follow btn" href="#">
+                            <img class="btn-logo" src="../img/buttons/Plus.svg">
+                            <div class="btn-text">Follow</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="artist-page__nft-categories">
+            <div class="container">
+                <div class="artist-page__nft-categories-row">
+                    <a class="artist-page__nft-category" href="#">
+                        <span class="artist-page__nft-categories-mark">Created</span>
+                        <span class="artist-page__nft-categories-amount">302</span>
+                    </a>
+                    <a class="artist-page__nft-category" href="#">
+                        <span class="artist-page__nft-categories-mark">Owned</span>
+                        <span class="artist-page__nft-categories-amount">67</span>
+                    </a>
+                    <a class="artist-page__nft-category" href="#">
+                        <span class="artist-page__nft-categories-mark">Collections</span>
+                        <span class="artist-page__nft-categories-amount">4</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="artist-page__cards-section">
+            <div class="container">
+                <div class="artist-page__nft-cards">
+                    <a class="nft-card" href="./nft-page.html">
+                        <img class="nft-img" src="../img/artist-page/nfts/Image-1.png">
+                        <div class="nft-info">
+                            <div class="nft-name">Distant Galaxy</div>
+                            <div class="artist-card">
+                                <img class="artist-img" src="../img/avatars/Avatar-12.png">
+                                <div class="artist-name">Animakid</div>
+                            </div>
+                            <div class="additional-info">
+                                <div class="price-info">
+                                    <div class="price-info__mark">Price</div>
+                                    <div class="price-info__amount">1.63 ETH</div>
+                                </div>
+                                <div class="bid-info">
+                                    <div class="bid-info__mark">Highest Bid</div>
+                                    <div class="bid-info__amount">0.33 wETH</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nft-card" href="./nft-page.html">
+                        <img class="nft-img" src="../img/artist-page/nfts/Image-2.png">
+                        <div class="nft-info">
+                            <div class="nft-name">Life On Edena</div>
+                            <div class="artist-card">
+                                <img class="artist-img" src="../img/avatars/Avatar-12.png">
+                                <div class="artist-name">Animakid</div>
+                            </div>
+                            <div class="additional-info">
+                                <div class="price-info">
+                                    <div class="price-info__mark">Price</div>
+                                    <div class="price-info__amount">1.63 ETH</div>
+                                </div>
+                                <div class="bid-info">
+                                    <div class="bid-info__mark">Highest Bid</div>
+                                    <div class="bid-info__amount">0.33 wETH</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nft-card" href="./nft-page.html">
+                        <img class="nft-img" src="../img/artist-page/nfts/Image-3.png">
+                        <div class="nft-info">
+                            <div class="nft-name">AstroFiction</div>
+                            <div class="artist-card">
+                                <img class="artist-img" src="../img/avatars/Avatar-12.png">
+                                <div class="artist-name">Animakid</div>
+                            </div>
+                            <div class="additional-info">
+                                <div class="price-info">
+                                    <div class="price-info__mark">Price</div>
+                                    <div class="price-info__amount">1.63 ETH</div>
+                                </div>
+                                <div class="bid-info">
+                                    <div class="bid-info__mark">Highest Bid</div>
+                                    <div class="bid-info__amount">0.33 wETH</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nft-card" href="./nft-page.html">
+                        <img class="nft-img" src="../img/artist-page/nfts/Image-4.png">
+                        <div class="nft-info">
+                            <div class="nft-name">CryptoCity</div>
+                            <div class="artist-card">
+                                <img class="artist-img" src="../img/avatars/Avatar-12.png">
+                                <div class="artist-name">Animakid</div>
+                            </div>
+                            <div class="additional-info">
+                                <div class="price-info">
+                                    <div class="price-info__mark">Price</div>
+                                    <div class="price-info__amount">1.63 ETH</div>
+                                </div>
+                                <div class="bid-info">
+                                    <div class="bid-info__mark">Highest Bid</div>
+                                    <div class="bid-info__amount">0.33 wETH</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nft-card" href="./nft-page.html">
+                        <img class="nft-img" src="../img/artist-page/nfts/Image-5.png">
+                        <div class="nft-info">
+                            <div class="nft-name">ColorfulDog 0524</div>
+                            <div class="artist-card">
+                                <img class="artist-img" src="../img/avatars/Avatar-12.png">
+                                <div class="artist-name">Animakid</div>
+                            </div>
+                            <div class="additional-info">
+                                <div class="price-info">
+                                    <div class="price-info__mark">Price</div>
+                                    <div class="price-info__amount">1.63 ETH</div>
+                                </div>
+                                <div class="bid-info">
+                                    <div class="bid-info__mark">Highest Bid</div>
+                                    <div class="bid-info__amount">0.33 wETH</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nft-card" href="./nft-page.html">
+                        <img class="nft-img" src="../img/artist-page/nfts/Image-6.png">
+                        <div class="nft-info">
+                            <div class="nft-name">Space Tales</div>
+                            <div class="artist-card">
+                                <img class="artist-img" src="../img/avatars/Avatar-12.png">
+                                <div class="artist-name">Animakid</div>
+                            </div>
+                            <div class="additional-info">
+                                <div class="price-info">
+                                    <div class="price-info__mark">Price</div>
+                                    <div class="price-info__amount">1.63 ETH</div>
+                                </div>
+                                <div class="bid-info">
+                                    <div class="bid-info__mark">Highest Bid</div>
+                                    <div class="bid-info__amount">0.33 wETH</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nft-card" href="./nft-page.html">
+                        <img class="nft-img" src="../img/artist-page/nfts/Image-7.png">
+                        <div class="nft-info">
+                            <div class="nft-name">Cherry Blossom Girl 037</div>
+                            <div class="artist-card">
+                                <img class="artist-img" src="../img/avatars/Avatar-12.png">
+                                <div class="artist-name">Animakid</div>
+                            </div>
+                            <div class="additional-info">
+                                <div class="price-info">
+                                    <div class="price-info__mark">Price</div>
+                                    <div class="price-info__amount">1.63 ETH</div>
+                                </div>
+                                <div class="bid-info">
+                                    <div class="bid-info__mark">Highest Bid</div>
+                                    <div class="bid-info__amount">0.33 wETH</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nft-card" href="./nft-page.html">
+                        <img class="nft-img" src="../img/artist-page/nfts/Image-8.png">
+                        <div class="nft-info">
+                            <div class="nft-name">Dancing Robots 0987</div>
+                            <div class="artist-card">
+                                <img class="artist-img" src="../img/avatars/Avatar-12.png">
+                                <div class="artist-name">Animakid</div>
+                            </div>
+                            <div class="additional-info">
+                                <div class="price-info">
+                                    <div class="price-info__mark">Price</div>
+                                    <div class="price-info__amount">1.63 ETH</div>
+                                </div>
+                                <div class="bid-info">
+                                    <div class="bid-info__mark">Highest Bid</div>
+                                    <div class="bid-info__amount">0.33 wETH</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nft-card" href="./nft-page.html">
+                        <img class="nft-img" src="../img/artist-page/nfts/Image-9.png">
+                        <div class="nft-info">
+                            <div class="nft-name">IceCream Ape</div>
+                            <div class="artist-card">
+                                <img class="artist-img" src="../img/avatars/Avatar-12.png">
+                                <div class="artist-name">Animakid</div>
+                            </div>
+                            <div class="additional-info">
+                                <div class="price-info">
+                                    <div class="price-info__mark">Price</div>
+                                    <div class="price-info__amount">1.63 ETH</div>
+                                </div>
+                                <div class="bid-info">
+                                    <div class="bid-info__mark">Highest Bid</div>
+                                    <div class="bid-info__amount">0.33 wETH</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__head">
+                <div class="footer__row">
+                    <div class="footer__section-one">
+                        <div class="footer__logo">
+                            <a href="#">
+                                <img src="../img/footer/Logo.svg">
+                            </a>
+                        </div>
+                        <div class="footer__text">NFT marketplace UI created with Anima for Figma.</div>
+                        <div class="footer__social">
+                            <div class="footer__social-text footer__text">Join our community</div>
+                            <div class="footer__icons">
+                                <div class="footer__icon"><a href="#">
+                                        <img src="../img/footer/DiscordLogo.svg">
+                                    </a></div>
+                                <div class="footer__icon"><a href="#">
+                                        <img src="../img/footer/YoutubeLogo.svg">
+                                    </a></div>
+                                <div class="footer__icon"><a href="#">
+                                        <img src="../img/footer/TwitterLogo.svg">
+                                    </a></div>
+                                <div class="footer__icon"><a href="#">
+                                        <img src="../img/footer/InstagramLogo.svg">
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__section-two">
+                        <div class="footer__title">Explore</div>
+                        <div class="footer__nav">
+                            <div class="footer__nav-item"><a class="footer__text" href="#">Marketplace</a></div>
+                            <div class="footer__nav-item"><a class="footer__text" href="#">Rankings</a></div>
+                            <div class="footer__nav-item"><a class="footer__text" href="#">Connect a wallet</a></div>
+                        </div>
+                    </div>
+                    <div class="footer__section-three">
+                        <div class="footer__title">Join our weekly digest</div>
+                        <div class="footer__text">Get exclusive promotions & updates straight to your inbox.</div>
+                        <div class="footer__subscrube-form">
+                            <input class="footer__form-input" type="email" placeholder="Enter your email here">
+                            <button class="footer__form-button" type="button">
+                                <img class="footer__button-img" src="../img/buttons/EnvelopeSimple.svg">
+                                <span class="footer__button-text">Subscribe</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__footer">
+                <p>Ⓒ NFT Market. Use this template freely.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

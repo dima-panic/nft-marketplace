@@ -1,0 +1,145 @@
+@import "../reset.scss",
+"../base.scss",
+"../mixins/fonts.scss",
+"../mixins/button-designer.scss",
+"../components/header.scss",
+"../components/footer.scss";
+
+
+.connect-wallet {
+    &__wrap {
+        display: flex;
+        column-gap: 60px;
+        height: 642px;
+        width: 100%;
+    }
+
+    &__img {
+        object-fit: cover;
+        width: 50%;
+    }
+
+    &__row {
+        padding: 100px 0px;
+        width: 50%;
+    }
+
+    &__header {
+        @include work-sans(600, 51px, 110%, #fff);
+        margin-bottom: 20px;
+        width: 460px;
+    }
+
+    &__headline {
+        @include work-sans(400, 22px, 160%, #fff);
+        margin-bottom: 40px;
+        width: 460px;
+    }
+
+    &__button+&__button {
+        margin-top: 20px;
+    }
+
+    &__button {
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+        padding-left: 40px;
+        width: 320px;
+        height: 72px;
+        border: 1px solid rgba(162, 89, 255, 1);
+        border-radius: 20px;
+        background-color: rgba(59, 59, 59, 1);
+        transition: 0.35s;
+
+        &:hover {
+            transform: scale(0.95);
+        }
+    }
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__text {
+        @include work-sans(600, 22px, 140%, #fff);
+    }
+}
+
+@media screen and (min-width: 834px) and (max-width:1279px) {
+    .connect-wallet {
+        &__wrap {
+            column-gap: 40px;
+            height: 530px;
+        }
+
+        &__row {
+            padding: 80px 0px;
+        }
+
+        &__header {
+            @include work-sans(600, 38px, 120%, #fff);
+            margin-bottom: 20px;
+            width: 325px;
+        }
+
+        &__headline {
+            @include work-sans(400, 16px, 140%, #fff);
+            margin-bottom: 40px;
+            width: 325px;
+        }
+
+        &__button {
+            height: 60px;
+        }
+
+        &__icon {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width:834px) {
+    .connect-wallet {
+        &__wrap {
+            flex-direction: column;
+            column-gap: 0px;
+            height: 662px;
+        }
+
+        &__img{
+            height: 232px;
+            width: 100%;
+        }
+
+        &__row {
+            padding: 30px 30px 40px 30px;
+            width: 375px;
+            margin: 0 auto;
+        }
+
+        &__header {
+            @include work-sans(600, 38px, 120%, #fff);
+            margin-bottom: 20px;
+            width: 315px;
+        }
+
+        &__headline {
+            @include work-sans(400, 16px, 140%, #fff);
+            margin-bottom: 30px;
+            width: 315px;
+        }
+
+        &__button {
+            height: 60px;
+            width: 315px;
+        }
+
+        &__icon {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}

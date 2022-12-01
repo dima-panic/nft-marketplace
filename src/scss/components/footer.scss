@@ -1,0 +1,186 @@
+.footer {
+    background-color: rgba(59, 59, 59, 1);
+    padding: 40px 0px 40px;
+
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    &__section-one {
+        width: 245px;
+    }
+
+    &__section-three {
+        width: 420px;
+    }
+
+    &__logo {
+        margin-bottom: 27px;
+
+        a {
+            display: contents;
+        }
+    }
+
+    &__text {
+        @include work-sans(400, 16px, 140%, #CCCCCC);
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        @include space-mono(700,22px,160%,#fff);
+        margin-bottom: 25px;
+    }
+
+    &__icons {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__subscrube-form {
+        width: 420px;
+        height: 60px;
+        display: flex;
+        position: relative;
+    }
+
+    &__form-input {
+        &::placeholder {
+            @include work-sans(400, 16px, 140%, #2B2B2B);
+        }
+        padding: 0px 220px 0px 20px;
+        border-radius: 20px;
+        width: 100%;
+        outline: none;
+    }
+
+    &__form-button {
+        width: 211px;
+        height: 60px;
+        right:0;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 12px;
+        border-radius: 20px;
+        background-color: #A259FF;
+        padding: 0px 50px 0px 50px;
+        transition: .35s;
+
+        &:hover {
+            transform: scale(0.95);
+            cursor: pointer;
+        }
+    }
+
+    &__button-img {
+        display: none;
+    }
+
+    &__button-text {
+        @include work-sans(600, 16px, 140%, #fff);
+    }
+
+    &__footer {
+        @include work-sans(400, 12px, 110%, #CCCCCC);
+        padding-top: 20px;
+        border-top: 1px solid #858584;
+    }
+}
+
+@media screen and (min-width: 834px) and (max-width:1279px){
+    .footer {
+        background-color: rgba(59, 59, 59, 1);
+        padding: 40px 0px 40px;
+    
+    
+        &__row {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            margin-bottom: 30px;
+        }
+    
+        &__section-one {
+            width: 100%;
+        }
+    
+        &__section-three {
+            width: 100%;
+        }
+    
+        &__btn {
+            width: 420px;
+        }
+    
+    }    
+}
+
+@media screen and (min-width: 375px) and (max-width:834px){
+    .footer {
+        background-color: rgba(59, 59, 59, 1);
+        padding: 40px 0px 40px;
+    
+        &__row {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            margin-bottom: 30px;
+        }
+    
+        &__section-one {
+            width: 100%;
+        }
+    
+        &__section-three {
+            width: 100%;
+        }
+    
+        &__btn {
+            width: 420px;
+        }
+        
+        &__subscrube-form {
+            height: auto;
+            flex-direction: column;
+            row-gap: 16px;
+            position: static;
+        }
+    
+        &__form-input {
+            padding: 0px 20px;
+            height: 46px;
+            width: 315px;
+        }
+    
+        &__form-button {
+            width: 315px;
+            height: 46px;
+            position: static;
+            justify-content: center;
+            align-items: center;
+            column-gap: 12px;
+            padding: 0px 50px 0px 50px;
+        }
+    
+        &__button-img {
+            display: block;
+            width: 20px;
+            height: 20px;
+        }
+    
+        &__button-text {
+            @include work-sans(600, 16px, 90%, #fff);
+        }  
+    }    
+}

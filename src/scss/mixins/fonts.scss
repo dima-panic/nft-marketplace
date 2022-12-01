@@ -1,0 +1,17 @@
+@mixin space-mono($fw, $fz, $lh, $color) {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $color;
+}
+
+@mixin work-sans($fw, $fz, $lh, $color) {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $color;
+}
