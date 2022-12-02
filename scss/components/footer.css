@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'work-sans'.
-        on line 29 of C:\Users\torop\Desktop\styding\MARKETPLACE\style\scss\components\footer.scss, in `work-sans'
-        from line 29 of C:\Users\torop\Desktop\styding\MARKETPLACE\style\scss\components\footer.scss
+        on line 29 of C:\Users\torop\Desktop\styding\MARKETPLACE\scss\components\footer.scss, in `work-sans'
+        from line 29 of C:\Users\torop\Desktop\styding\MARKETPLACE\scss\components\footer.scss
 
 24:             display: contents;
 25:         }
@@ -16,8 +16,8 @@ Error: Undefined mixin 'work-sans'.
 34:         @include space-mono(700,22px,160%,#fff);
 
 Backtrace:
-C:\Users\torop\Desktop\styding\MARKETPLACE\style\scss\components\footer.scss:29:in `work-sans'
-C:\Users\torop\Desktop\styding\MARKETPLACE\style\scss\components\footer.scss:29
+C:\Users\torop\Desktop\styding\MARKETPLACE\scss\components\footer.scss:29:in `work-sans'
+C:\Users\torop\Desktop\styding\MARKETPLACE\scss\components\footer.scss:29
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -63,9 +63,10 @@ C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/bas
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:20:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
@@ -76,4 +77,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'work-sans'.\A         on line 29 of C:\Users\torop\Desktop\styding\MARKETPLACE\style\scss\components\footer.scss, in `work-sans'\A         from line 29 of C:\Users\torop\Desktop\styding\MARKETPLACE\style\scss\components\footer.scss\A \A 24:             display: contents;\A 25:         }\A 26:     }\A 27: \A 28:     &__text {\A 29:         @include work-sans(400, 16px, 140%, #CCCCCC);\A 30:         margin-bottom: 20px;\A 31:     }\A 32: \A 33:     &__title {\A 34:         @include space-mono(700,22px,160%,#fff);"; }
+  content: "Error: Undefined mixin 'work-sans'.\A         on line 29 of C:\Users\torop\Desktop\styding\MARKETPLACE\scss\components\footer.scss, in `work-sans'\A         from line 29 of C:\Users\torop\Desktop\styding\MARKETPLACE\scss\components\footer.scss\A \A 24:             display: contents;\A 25:         }\A 26:     }\A 27: \A 28:     &__text {\A 29:         @include work-sans(400, 16px, 140%, #CCCCCC);\A 30:         margin-bottom: 20px;\A 31:     }\A 32: \A 33:     &__title {\A 34:         @include space-mono(700,22px,160%,#fff);"; }
