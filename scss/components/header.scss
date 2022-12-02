@@ -1,3 +1,9 @@
+@import "../reset.scss",
+"../base.scss",
+"../mixins/fonts.scss",
+"../mixins/button-designer.scss",
+"../mixins/nft-card.scss";
+
 .header__row {
     display: flex;
     justify-content: space-between;

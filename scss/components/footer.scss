@@ -1,3 +1,9 @@
+@import "../reset.scss",
+"../base.scss",
+"../mixins/fonts.scss",
+"../mixins/button-designer.scss",
+"../mixins/nft-card.scss";
+
 .footer {
     background-color: rgba(59, 59, 59, 1);
     padding: 40px 0px 40px;

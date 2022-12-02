@@ -50,6 +50,80 @@ img {
   .container {
     width: 375px;
     padding: 0px 30px; } }
+*,
+*::after,
+*::before {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: none;
+  box-sizing: border-box; }
+
+body {
+  margin: 0px; }
+
+a,
+a:visited,
+a:link {
+  text-decoration: none; }
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  padding: 0px;
+  margin: 0px; }
+
+input {
+  padding: 0px;
+  margin: 0px; }
+
+a, img {
+  border: none; }
+
+body {
+  background-color: #2B2B2B; }
+
+.container {
+  width: 1280px;
+  padding: 0px 115px 0px 115px;
+  margin: 0 auto;
+  position: relative; }
+
+img {
+  display: block; }
+
+@media screen and (min-width: 834px) and (max-width: 1279px) {
+  .container {
+    width: 834px;
+    padding: 0px 72px 0px 72px; } }
+@media screen and (max-width: 834px) {
+  .container {
+    width: 375px;
+    padding: 0px 30px; } }
+/*
+<a class="cards-row__item nft-card" href="#">
+   <img class="nft-img" src="./img/nft-img/Distant-Galaxy.png">
+   <div class="nft-info">
+       <div class="nft-name">Distant Galaxy</div>
+       <div class="artist-card">
+           <img class="artist-img" src="./img/avatars/Avatar-14.png">
+           <div class="artist-name">MoonDancer</div>
+       </div>
+       <div class="additional-info">
+           <div class="price-info">
+               <div class="price-info__mark">Price</div>
+               <div class="price-info__amount">1.63 ETH</div>
+           </div>
+           <div class="bid-info">
+               <div class="bid-info__mark">Highest Bid</div>
+               <div class="bid-info__amount">0.33 wETH</div>
+           </div>
+       </div>
+   </div>
+</a>
+*/
 .header__row {
   display: flex;
   justify-content: space-between;
@@ -105,7 +179,7 @@ img {
 
   .nav__burger-menu {
     display: block; } }
-@media screen and (min-width: 375px) and (max-width: 834px) {
+@media screen and (max-width: 834px) {
   .header__row {
     padding: 0px 30px;
     height: 54px; }
@@ -122,6 +196,80 @@ img {
 
   .nav__burger-menu {
     display: block; } }
+*,
+*::after,
+*::before {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: none;
+  box-sizing: border-box; }
+
+body {
+  margin: 0px; }
+
+a,
+a:visited,
+a:link {
+  text-decoration: none; }
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  padding: 0px;
+  margin: 0px; }
+
+input {
+  padding: 0px;
+  margin: 0px; }
+
+a, img {
+  border: none; }
+
+body {
+  background-color: #2B2B2B; }
+
+.container {
+  width: 1280px;
+  padding: 0px 115px 0px 115px;
+  margin: 0 auto;
+  position: relative; }
+
+img {
+  display: block; }
+
+@media screen and (min-width: 834px) and (max-width: 1279px) {
+  .container {
+    width: 834px;
+    padding: 0px 72px 0px 72px; } }
+@media screen and (max-width: 834px) {
+  .container {
+    width: 375px;
+    padding: 0px 30px; } }
+/*
+<a class="cards-row__item nft-card" href="#">
+   <img class="nft-img" src="./img/nft-img/Distant-Galaxy.png">
+   <div class="nft-info">
+       <div class="nft-name">Distant Galaxy</div>
+       <div class="artist-card">
+           <img class="artist-img" src="./img/avatars/Avatar-14.png">
+           <div class="artist-name">MoonDancer</div>
+       </div>
+       <div class="additional-info">
+           <div class="price-info">
+               <div class="price-info__mark">Price</div>
+               <div class="price-info__amount">1.63 ETH</div>
+           </div>
+           <div class="bid-info">
+               <div class="bid-info__mark">Highest Bid</div>
+               <div class="bid-info__amount">0.33 wETH</div>
+           </div>
+       </div>
+   </div>
+</a>
+*/
 .footer {
   background-color: #3b3b3b;
   padding: 40px 0px 40px; }
@@ -227,7 +375,7 @@ img {
       width: 100%; }
     .footer__btn {
       width: 420px; } }
-@media screen and (min-width: 375px) and (max-width: 834px) {
+@media screen and (max-width: 834px) {
   .footer {
     background-color: #3b3b3b;
     padding: 40px 0px 40px; }
@@ -414,7 +562,7 @@ img {
   .hero-section__nft, .hero-section__nft-img {
     width: 330px;
     height: 330px; } }
-@media screen and (min-width: 375px) and (max-width: 834px) {
+@media screen and (max-width: 834px) {
   .hero-section__wrap {
     padding: 40px 0px;
     display: grid;
@@ -594,7 +742,7 @@ img {
     color: #fff; }
   .trending-collection__card-row-item:nth-last-child(1) {
     display: none; } }
-@media screen and (min-width: 375px) and (max-width: 834px) {
+@media screen and (max-width: 834px) {
   .trending-collection__wrap {
     padding: 40px 0px;
     row-gap: 40px; }
@@ -803,7 +951,7 @@ img {
   .top-artists .artist__serial-number {
     left: 13px;
     top: 13px; } }
-@media screen and (min-width: 375px) and (max-width: 834px) {
+@media screen and (max-width: 834px) {
   .top-artists__wrap {
     padding: 40px 0px 40px;
     row-gap: 40px; }
@@ -945,7 +1093,7 @@ img {
     line-height: 140%;
     color: #fff;
     padding: 20px 20px 47px 20px; } }
-@media screen and (min-width: 375px) and (max-width: 834px) {
+@media screen and (max-width: 834px) {
   .browse-categories__wrap {
     padding: 40px 0px 40px;
     row-gap: 40px; }
@@ -1113,7 +1261,7 @@ img {
     color: #fff; }
   .more-nft .cards-row__item:nth-last-child(1) {
     display: none; } }
-@media screen and (min-width: 375px) and (max-width: 834px) {
+@media screen and (max-width: 834px) {
   .more-nft__wrap {
     padding: 40px 0px 40px;
     row-gap: 40px; }
@@ -1336,7 +1484,7 @@ img {
     font-size: 38px;
     line-height: 120%;
     color: #fff; } }
-@media screen and (min-width: 375px) and (max-width: 834px) {
+@media screen and (max-width: 834px) {
   .magic-mashroom__row {
     padding-top: 120px;
     flex-direction: column;
@@ -1472,7 +1620,7 @@ img {
     font-size: 12px;
     line-height: 140%;
     color: #fff; } }
-@media screen and (min-width: 375px) and (max-width: 834px) {
+@media screen and (max-width: 834px) {
   .how-it-works__wrap {
     padding: 40px 0px 40px;
     row-gap: 40px; }
