@@ -36,7 +36,8 @@ body {
 .container {
   width: 1280px;
   padding: 0px 115px 0px 115px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
 
 img {
   display: block; }
@@ -45,7 +46,7 @@ img {
   .container {
     width: 834px;
     padding: 0px 72px 0px 72px; } }
-@media screen and (min-width: 375px) and (max-width: 834px) {
+@media screen and (max-width: 834px) {
   .container {
     width: 375px;
     padding: 0px 30px; } }
@@ -386,7 +387,7 @@ img {
     width: 325px; }
   .create-account__form-button {
     width: 325px; } }
-@media screen and (min-width: 375px) and (max-width: 834px) {
+@media screen and (max-width: 834px) {
   .create-account__wrap {
     column-gap: 0px;
     flex-direction: column;
@@ -427,3 +428,5 @@ img {
     font-size: 16px;
     line-height: 140%;
     color: #fff; } }
+
+/*# sourceMappingURL=create-account.css.map */
