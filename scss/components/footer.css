@@ -174,9 +174,7 @@ img {
     .footer__section-one {
       width: 100%; }
     .footer__section-three {
-      width: 100%; }
-    .footer__btn {
-      width: 420px; } }
+      width: 100%; } }
 @media screen and (max-width: 834px) {
   .footer {
     background-color: #3b3b3b;
@@ -190,10 +188,9 @@ img {
       width: 100%; }
     .footer__section-three {
       width: 100%; }
-    .footer__btn {
-      width: 420px; }
     .footer__subscrube-form {
       height: auto;
+      width: 100%;
       flex-direction: column;
       row-gap: 16px;
       position: static; }
